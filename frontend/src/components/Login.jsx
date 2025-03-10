@@ -87,7 +87,7 @@ export default function Login() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        minHeight: "100vh",  // Full screen height
+        minHeight: "100vh",  
       }}
     >
       <Paper elevation={3} sx={{ padding: 3, width: "100%", textAlign: "center" }}>
