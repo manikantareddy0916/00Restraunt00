@@ -88,15 +88,15 @@ console.log('num',num)
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                height: "100vh", // Full page height
+                height: "100vh", 
             }}
         >
             {iteam ? (
                 <Card 
                     sx={{
-                        width: "80vw", // 80% of viewport width
-                        height: "70vh", // Increased height
-                        boxShadow: 2, // Reduced shadow
+                        width: "80vw", 
+                        height: "70vh", 
+                        boxShadow: 2, 
                         borderRadius: 4,
                         display: "flex",
                         flexDirection: "row",
@@ -105,7 +105,6 @@ console.log('num',num)
                         backgroundColor: "#f9f9f9",
                     }}
                 >
-                    {/* Image Section */}
                     <Box
                         component="img"
                         src={iteam.iteamImage[0].url}
@@ -118,7 +117,6 @@ console.log('num',num)
                         }}
                     />
 
-                    {/* Text Section */}
                     <CardContent sx={{ flex: 1, paddingLeft: 4 }}>
                         <Typography variant="h3" sx={{ fontWeight: "bold" }}>
                             {iteam.iteamName}
