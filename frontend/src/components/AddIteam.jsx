@@ -14,7 +14,7 @@ export default function AddItem() {
     
     
 
-    const categories = ["veg", "non-veg"]; // Category options
+    const categories = ["veg", "non-veg"]; 
 
     const [editIteam, setEditIteam] = useState({})
     console.log('editTe',editIteam._id)
@@ -38,7 +38,7 @@ const data = useSelector((state) => {
     if (editIteam && editIteam._id) {
         return state.allIteams.allIteams.find((ele) => ele._id === editIteam._id);
     }
-    return null; // Return null instead of undefined
+    return null; 
 });
 
     //console.log('outsid',data)
