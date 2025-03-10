@@ -12,18 +12,7 @@ const userSchema = new Schema ({
     },
     orders :  Array,
     cart   :  Array,
-    // rentalProducts : [{
-    //     type : Schema.Types.ObjectId,
-    //     ref : 'Product'
-    // }],
-    // rentalDetails : [{
-    //     type: Schema.Types.ObjectId,
-    //     ref : 'RentalProduct'
-    // }],
-    // requestsId : [{
-    //     type : Schema.Types.ObjectId,
-    //     ref : 'RentalProduct'
-    // }],
+    
     
    
 }, {timestamps: true})
