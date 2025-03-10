@@ -25,8 +25,8 @@ export default function Cart() {
     //
     useEffect(() => {
         const total = cartData?.reduce((pre, cuv) => {
-            console.log('jj', cuv.price * cuv.quantity); // Log accumulator before modifying
-            return pre + (cuv.price * cuv.quantity ) ; // Add price correctly
+            console.log('jj', cuv.price * cuv.quantity); 
+            return pre + (cuv.price * cuv.quantity ) ; 
         }, 0);
         setTotalPrice(total)
     }, [cartData]);
@@ -66,7 +66,7 @@ export default function Cart() {
                                         backgroundColor: "#f5f5f5",
                                         transform: "scale(1.02)",
                                     },
-                                    p: 2, // Padding inside the card
+                                    p: 2, 
                                 }}
                             >
                                 <CardContent
@@ -94,7 +94,7 @@ export default function Cart() {
 
                                     <Typography variant="body2">TotalPrice: ₹{item.price * item.quantity}</Typography>
 
-                                    {/* Quantity & Delete Section */}
+                                    {/* Delet Section */}
                                     <Box sx={{ display: "flex", alignItems: "center", gap: 1, mt: 2 }}>
                                         <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
                                             Quantity
@@ -112,7 +112,7 @@ export default function Cart() {
                                        
                                     </Box>
                                 </CardContent>
-                                 {/* Delete Button - Positioned Beside `+` Button */}
+                              
                                  <IconButton 
                                             onClick={() => handleDelete(item._id)} 
                                             sx={{ color: "red", ml: 1 }}
