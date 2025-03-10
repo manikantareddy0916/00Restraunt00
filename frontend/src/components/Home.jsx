@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Home() {
     const navigate = useNavigate();
-    const allIt = useSelector((state) => state?.allIteams); // Access Redux store
+    const allIt = useSelector((state) => state?.allIteams);
 
 
     
@@ -32,7 +32,7 @@ export default function Home() {
                             >
                                 {ele?.iteamImage?.length > 0 && (
                             <img
-                                src={ele.iteamImage[0].url} // Access first image URL
+                                src={ele.iteamImage[0].url} 
                                 alt={ele?.iteamName}
                                 style={{
                                     width: "100%",
